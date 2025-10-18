@@ -7,13 +7,6 @@ import { icons } from '../utils/icons.js';
 export function renderAnalysisScreen(state) {
     return `
         <div style="height: 100%; display: flex; flex-direction: column; background: white;">
-            <!-- Header -->
-            <div style="background: #0d9488; color: white; padding: 40px 24px 24px;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
-                    <h2 style="font-size: 20px; font-weight: bold; margin: 0;">Analyse en cours...</h2>
-                    <div style="width: 32px; height: 32px; border: 4px solid white; border-top-color: transparent; border-radius: 50%;" class="animate-spin"></div>
-                </div>
-            </div>
 
             <!-- Contenu -->
             <div style="flex: 1; padding: 24px; overflow-y: auto;">
@@ -66,7 +59,8 @@ export function renderAnalysisScreen(state) {
                         </div>
                         <p style="font-size: 14px; color: #374151; line-height: 1.6; margin: 0;">
                             ✓ Taille minimale respectée<br />
-                            ✓ Quota journalier: ${state.casiersDetected * 4}/15
+                            // ✓ Quota journalier: ${state.casiersDetected * 4}/15
+                            ✓ Quota journalier: 2/15
                         </p>
                     </div>
                 </div>
@@ -75,7 +69,7 @@ export function renderAnalysisScreen(state) {
             <!-- Boutons -->
             <div style="padding: 24px; border-top: 1px solid #e5e7eb; display: flex; flex-direction: column; gap: 12px;">
                 <button onclick="addCasier()" class="btn-primary" style="background: #0d9488; color: white;">
-                    Nouveau casier
+                    Saisir un nouveau bac
                 </button>
                 <button onclick="changeScreen('tracking')" class="btn-secondary">
                     Retour

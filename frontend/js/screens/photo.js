@@ -20,10 +20,6 @@ export function renderPhotoScreen(state) {
                     <button onclick="changeScreen('tracking')" style="padding: 12px; background: rgba(0, 0, 0, 0.5); border-radius: 50%; color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;">
                         ${icons.x}
                     </button>
-                    <div style="background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); padding: 8px 16px; border-radius: 9999px; color: white; font-size: 12px; display: flex; align-items: center; gap: 6px;">
-                        ${icons.mapPin}
-                        Position GPS enregistrée
-                    </div>
                 </div>
 
                 <!-- Info IA -->
