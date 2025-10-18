@@ -8,10 +8,10 @@ class AppState {
         this.data = {
             screen: 'tracking',
             trackingActive: false,
-            trackingTime: '0h 00min',
+            trackingTime: '0h 00min 00s',
             casiersDetected: 0,
             timer: null,
-            minutes: 0,
+            seconds: 0,
             selectedFeedback: null
         };
         this.listeners = [];
@@ -53,9 +53,9 @@ class AppState {
         this.set({
             screen: 'tracking',
             trackingActive: false,
-            trackingTime: '0h 00min',
+            trackingTime: '0h 00min 00s',
             casiersDetected: 0,
-            minutes: 0
+            seconds: 0
         });
     }
 }

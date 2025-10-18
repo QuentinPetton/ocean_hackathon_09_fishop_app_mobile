@@ -12,15 +12,16 @@ let timerInterval = null;
 export function startTimer() {
     timerInterval = setInterval(() => {
         const currentState = state.get();
-        const newMinutes = currentState.minutes + 1;
-        const hours = Math.floor(newMinutes / 60);
-        const mins = newMinutes % 60;
+        const newSeconds = currentState.seconds + 1;
+        const hours = Math.floor(newSeconds / 3600);
+        const mins = Math.floor((newSeconds % 3600) / 60);
+        const secs = newSeconds % 60;
 
         state.set({
-            minutes: newMinutes,
-            trackingTime: `${hours}h ${mins.toString().padStart(2, '0')}min`
+            seconds: newSeconds,
+            trackingTime: `${hours}h ${mins.toString().padStart(2, '0')}min ${secs.toString().padStart(2, '0')}s`
         });
-    }, 60000); // Toutes les minutes
+    }, 1000); // Toutes les secondes
 
     state.set({ timer: timerInterval });
 }
@@ -42,7 +43,7 @@ export function stopTimer() {
 export function resetTimer() {
     stopTimer();
     state.set({
-        minutes: 0,
-        trackingTime: '0h 00min'
+        seconds: 0,
+        trackingTime: '0h 00min 00s'
     });
 }
