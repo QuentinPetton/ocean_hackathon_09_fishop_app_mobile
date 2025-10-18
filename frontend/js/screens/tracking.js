@@ -10,8 +10,8 @@ export function renderTrackingScreen(state) {
             <!-- Header -->
             <div style="padding: 40px 24px 24px; color: white;">
                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
-                    <div style="opacity: 0.9;">
-                        <div style="font-size: 14px; text-align: center; font-weight: 500;">FishOp Mobile</div>
+                    <div style="background: rgba(255, 255, 255, 0.95); padding: 16px 24px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                        <img src="./assets/logo_fishOp-removebg-preview.png" alt="FishOp" style="height: 50px; width: auto; display: block;">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export function renderTrackingScreen(state) {
                 ${state.trackingActive ? `
                     <button onclick="changeScreen('photo')" style="background: white; color: #0f766e; font-weight: bold; padding: 16px; border-radius: 9999px; width: 100%; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: center; gap: 8px;">
                         ${icons.camera}
-                        Photographier un casier
+                        Photographier un bac
                     </button>
                 ` : ''}
 
