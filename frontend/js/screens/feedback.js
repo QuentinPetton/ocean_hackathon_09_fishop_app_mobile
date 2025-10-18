@@ -22,12 +22,12 @@ export function renderFeedbackScreen(state) {
                             <span style="font-weight: 600;">${state.trackingTime}</span>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
-                            <span style="color: #6b7280;">Casiers posés:</span>
+                            <span style="color: #6b7280;">Arrêts détectés:</span>
                             <span style="font-weight: 600;">${state.casiersDetected}</span>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
                             <span style="color: #6b7280;">Captures:</span>
-                            <span style="font-weight: 600;">${state.casiersDetected * 2} poulpes</span>
+                            <span style="font-weight: 600;">${state.casiersDetected * 8} poulpes</span>
                         </div>
                     </div>
                 </div>
@@ -38,17 +38,26 @@ export function renderFeedbackScreen(state) {
                         La préconisation était-elle correcte ?
                     </label>
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                        <button onclick="selectFeedback('good')" style="padding: 16px; background: #dcfce7; border: 2px solid #86efac; border-radius: 16px; cursor: pointer; transition: all 0.2s;">
-                            <div class="feedback-emoji">😊</div>
-                            <div style="font-size: 12px; font-weight: 600; color: #166534;">Très bon</div>
+                        <button
+                            onclick="selectFeedback('bad')"
+                            id="feedback-bad"
+                            style="padding: 16px; background: #fee2e2; border: 2px solid #fca5a5; border-radius: 16px; cursor: pointer; transition: all 0.2s; transform: scale(${state.selectedFeedback === 'bad' ? '1.05' : '1'}); box-shadow: ${state.selectedFeedback === 'bad' ? '0 8px 16px rgba(220, 38, 38, 0.3)' : 'none'}; opacity: ${state.selectedFeedback && state.selectedFeedback !== 'bad' ? '0.5' : '1'};">
+                            <div style="font-size: 32px; margin-bottom: 4px;">😞</div>
+                            <div style="font-size: 12px; font-weight: 600; color: #991b1b;">Mauvais</div>
                         </button>
-                        <button onclick="selectFeedback('ok')" style="padding: 16px; background: #fef3c7; border: 2px solid #fde047; border-radius: 16px; cursor: pointer; transition: all 0.2s;">
-                            <div class="feedback-emoji">😐</div>
+                        <button
+                            onclick="selectFeedback('ok')"
+                            id="feedback-ok"
+                            style="padding: 16px; background: #fef3c7; border: 2px solid #fde047; border-radius: 16px; cursor: pointer; transition: all 0.2s; transform: scale(${state.selectedFeedback === 'ok' ? '1.05' : '1'}); box-shadow: ${state.selectedFeedback === 'ok' ? '0 8px 16px rgba(234, 179, 8, 0.3)' : 'none'}; opacity: ${state.selectedFeedback && state.selectedFeedback !== 'ok' ? '0.5' : '1'};">
+                            <div style="font-size: 32px; margin-bottom: 4px;">😐</div>
                             <div style="font-size: 12px; font-weight: 600; color: #854d0e;">Moyen</div>
                         </button>
-                        <button onclick="selectFeedback('bad')" style="padding: 16px; background: #fee2e2; border: 2px solid #fca5a5; border-radius: 16px; cursor: pointer; transition: all 0.2s;">
-                            <div class="feedback-emoji">😞</div>
-                            <div style="font-size: 12px; font-weight: 600; color: #991b1b;">Mauvais</div>
+                        <button
+                            onclick="selectFeedback('good')"
+                            id="feedback-good"
+                            style="padding: 16px; background: #dcfce7; border: 2px solid #86efac; border-radius: 16px; cursor: pointer; transition: all 0.2s; transform: scale(${state.selectedFeedback === 'good' ? '1.05' : '1'}); box-shadow: ${state.selectedFeedback === 'good' ? '0 8px 16px rgba(22, 163, 74, 0.3)' : 'none'}; opacity: ${state.selectedFeedback && state.selectedFeedback !== 'good' ? '0.5' : '1'};">
+                            <div style="font-size: 32px; margin-bottom: 4px;">😊</div>
+                            <div style="font-size: 12px; font-weight: 600; color: #166534;">Très bon</div>
                         </button>
                     </div>
                 </div>
@@ -57,7 +66,7 @@ export function renderFeedbackScreen(state) {
                 <div style="margin-bottom: 24px;">
                     <label style="display: block; font-weight: bold; margin-bottom: 12px;">Commentaires (optionnel)</label>
                     <textarea
-                        style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 16px; resize: none; font-size: 14px;"
+                        style="width: 90%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 16px; resize: none; font-size: 14px;"
                         rows="4"
                         placeholder="Partagez vos observations..."
                     ></textarea>

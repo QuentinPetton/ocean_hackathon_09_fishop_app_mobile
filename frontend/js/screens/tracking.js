@@ -39,7 +39,7 @@ export function renderTrackingScreen(state) {
                             <span style="font-weight: bold; font-size: 16px;">${state.trackingTime}</span>
                         </div>
                         <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-size: 14px;">Casiers détectés</span>
+                            <span style="font-size: 14px;">Arrêts détectés</span>
                             <span style="font-weight: bold; font-size: 16px;">${state.casiersDetected}</span>
                         </div>
                     </div>

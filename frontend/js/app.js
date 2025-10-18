@@ -94,6 +94,7 @@ window.endTracking = function() {
  * Enregistre le feedback utilisateur
  */
 window.selectFeedback = function(type) {
+    state.set({ selectedFeedback: type });
     console.log('Feedback sélectionné:', type);
     // TODO: Envoyer le feedback au backend
 };

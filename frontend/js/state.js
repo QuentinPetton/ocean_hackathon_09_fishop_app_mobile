@@ -11,7 +11,8 @@ class AppState {
             trackingTime: '0h 00min',
             casiersDetected: 0,
             timer: null,
-            minutes: 0
+            minutes: 0,
+            selectedFeedback: null
         };
         this.listeners = [];
     }
