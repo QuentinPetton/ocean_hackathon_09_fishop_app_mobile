@@ -6,7 +6,7 @@ import { icons } from '../utils/icons.js';
 
 export function renderAnalysisScreen(state) {
     return `
-        <div style="height: 100%; display: flex; flex-direction: column; background: white;">
+        <div style="min-height: 100vh; height: 100%; display: flex; flex-direction: column; background: white;">
 
             <!-- Contenu -->
             <div style="flex: 1; padding: 24px; overflow-y: auto;">
@@ -59,7 +59,6 @@ export function renderAnalysisScreen(state) {
                         </div>
                         <p style="font-size: 14px; color: #374151; line-height: 1.6; margin: 0;">
                             ✓ Taille minimale respectée<br />
-                            // ✓ Quota journalier: ${state.casiersDetected * 4}/15
                             ✓ Quota journalier: 2/15
                         </p>
                     </div>

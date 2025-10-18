@@ -6,7 +6,7 @@ import { icons } from '../utils/icons.js';
 
 export function renderPhotoScreen(state) {
     return `
-        <div style="height: 100%; display: flex; flex-direction: column;" class="camera-view">
+        <div style="min-height: 100vh; height: 100%; display: flex; flex-direction: column;" class="camera-view">
             <div style="flex: 1; position: relative;">
                 <!-- Zone de prévisualisation caméra -->
                 <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">

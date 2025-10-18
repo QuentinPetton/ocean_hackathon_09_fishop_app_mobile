@@ -4,9 +4,9 @@
 
 export function renderFeedbackScreen(state) {
     return `
-        <div style="height: 100%; display: flex; flex-direction: column; background: white;">
+        <div style="min-height: 100vh; height: 100%; display: flex; flex-direction: column; background: white;">
             <!-- Header -->
-            <div style="background: #0d9488; color: white; padding: 40px 24px 24px;">
+            <div style="background: #0d9488; color: white; padding: 14px 24px;">
                 <h2 style="font-size: 24px; font-weight: bold; margin: 0 0 4px 0;">Fin de sortie</h2>
                 <p style="font-size: 14px; opacity: 0.9; margin: 0;">Partagez votre retour d'expérience</p>
             </div>
@@ -63,7 +63,7 @@ export function renderFeedbackScreen(state) {
                 </div>
 
                 <!-- Commentaires -->
-                <div style="margin-bottom: 24px;">
+                <div>
                     <label style="display: block; font-weight: bold; margin-bottom: 12px;">Commentaires (optionnel)</label>
                     <textarea
                         style="width: 90%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 16px; resize: none; font-size: 14px;"

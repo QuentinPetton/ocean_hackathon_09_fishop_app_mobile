@@ -6,7 +6,7 @@ import { icons } from '../utils/icons.js';
 
 export function renderTrackingScreen(state) {
     return `
-        <div style="height: 100%; display: flex; flex-direction: column;" class="gradient-bg">
+        <div style="min-height: 100vh; height: 100%; display: flex; flex-direction: column;" class="gradient-bg">
             <!-- Header -->
             <div style="padding: 40px 24px 24px; color: white;">
                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
