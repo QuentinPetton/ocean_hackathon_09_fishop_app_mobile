@@ -23,11 +23,11 @@ export function renderFeedbackScreen(state) {
                         </div>
                         <div style="display: flex; justify-content: space-between;">
                             <span style="color: #6b7280;">Arrêts détectés:</span>
-                            <span style="font-weight: 600;">${state.casiersDetected}</span>
+                            <span style="font-weight: 600;">2</span>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
                             <span style="color: #6b7280;">Captures:</span>
-                            <span style="font-weight: 600;">${state.casiersDetected * 8} poulpes</span>
+                            <span style="font-weight: 600;">5 poulpes</span>
                         </div>
                     </div>
                 </div>

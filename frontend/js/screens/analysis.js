@@ -11,12 +11,8 @@ export function renderAnalysisScreen(state) {
             <!-- Contenu -->
             <div style="flex: 1; padding: 24px; overflow-y: auto;">
                 <!-- Image preview -->
-                <div style="background: #f3f4f6; border-radius: 16px; padding: 16px; margin-bottom: 24px;">
-                    <div style="aspect-ratio: 16/9; background: #d1d5db; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                        <div style="color: #6b7280;">
-                            ${icons.cameraBig}
-                        </div>
-                    </div>
+                <div style="border-radius: 16px; margin-bottom: 24px; overflow: hidden;">
+                    <img src="./assets/poulpe_bac.png" alt="Poulpe dans le bac" style="width: 100%; height: auto; display: block; transform: rotate(180deg);">
                 </div>
 
                 <!-- Résultats -->
@@ -36,7 +32,7 @@ export function renderAnalysisScreen(state) {
                             </div>
                             <div style="display: flex; justify-content: space-between;">
                                 <span style="color: #4b5563;">Quantité:</span>
-                                <span style="font-weight: 600;">2 spécimens</span>
+                                <span style="font-weight: 600;">5 spécimens</span>
                             </div>
                             <div style="display: flex; justify-content: space-between;">
                                 <span style="color: #4b5563;">Taille moyenne:</span>
@@ -59,7 +55,7 @@ export function renderAnalysisScreen(state) {
                         </div>
                         <p style="font-size: 14px; color: #374151; line-height: 1.6; margin: 0;">
                             ✓ Taille minimale respectée<br />
-                            ✓ Quota journalier: 2/15
+                            ✓ Quota journalier: 5/15
                         </p>
                     </div>
                 </div>
