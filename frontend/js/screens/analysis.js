@@ -55,7 +55,7 @@ export function renderAnalysisScreen(state) {
                         </div>
                         <p style="font-size: 14px; color: #374151; line-height: 1.6; margin: 0;">
                             ✓ Taille minimale respectée<br />
-                            ✓ Quota journalier: 5/15
+                            ✓ Quota journalier respecté
                         </p>
                     </div>
                 </div>

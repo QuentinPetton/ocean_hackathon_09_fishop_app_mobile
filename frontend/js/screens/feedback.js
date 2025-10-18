@@ -74,7 +74,7 @@ export function renderFeedbackScreen(state) {
             </div>
 
             <!-- Boutons -->
-            <div style="padding: 24px; border-top: 1px solid #e5e7eb; display: flex; flex-direction: column; gap: 12px;">
+            <div style="padding: 16px 24px 32px; border-top: 1px solid #e5e7eb; display: flex; flex-direction: column; gap: 12px;">
                 <button onclick="endTracking()" class="btn-primary" style="background: #0d9488; color: white;">
                     Envoyer et terminer
                 </button>

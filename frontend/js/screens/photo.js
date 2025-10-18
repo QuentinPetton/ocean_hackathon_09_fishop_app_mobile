@@ -34,7 +34,7 @@ export function renderPhotoScreen(state) {
             </div>
 
             <!-- Bouton de capture -->
-            <div style="padding: 24px; background: #111827;">
+            <div style="padding: 16px 24px 32px; background: #111827;">
                 <button onclick="changeScreen('analysis')" style="width: 80px; height: 80px; margin: 0 auto; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); transition: transform 0.2s;">
                     <div style="width: 64px; height: 64px; border: 4px solid #0d9488; border-radius: 50%;"></div>
                 </button>

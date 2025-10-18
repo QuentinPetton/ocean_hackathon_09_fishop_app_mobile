@@ -47,7 +47,7 @@ export function renderTrackingScreen(state) {
             </div>
 
             <!-- Boutons -->
-            <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="padding: 16px 24px 32px; display: flex; flex-direction: column; gap: 12px;">
                 ${state.trackingActive ? `
                     <button onclick="changeScreen('photo')" style="background: white; color: #0f766e; font-weight: bold; padding: 16px; border-radius: 9999px; width: 100%; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: center; gap: 8px;">
                         ${icons.camera}
