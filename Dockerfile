@@ -2,10 +2,10 @@
 FROM nginx:alpine
 
 # Copy custom nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy all frontend files to nginx html directory
-COPY . /usr/share/nginx/html
+COPY frontend /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
