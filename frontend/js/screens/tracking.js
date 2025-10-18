@@ -8,17 +8,17 @@ export function renderTrackingScreen(state) {
     return `
         <div style="min-height: 100vh; height: 100%; display: flex; flex-direction: column;" class="gradient-bg">
             <!-- Header -->
-            <div style="padding: 40px 24px 24px; color: white;">
-                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
-                    <div style="background: rgba(255, 255, 255, 0.95); padding: 16px 24px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-                        <img src="./assets/logo_fishOp-removebg-preview.png" alt="FishOp" style="height: 50px; width: auto; display: block;">
+            <div style="padding: 14px; color: white;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="background: rgba(255, 255, 255, 0.95); padding: 12px 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                        <img src="./assets/logo_fishOp-removebg-preview.png" alt="FishOp" style="height: 80px; width: auto; display: block;">
                     </div>
                 </div>
             </div>
 
             <!-- Contenu central -->
             <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; padding: 0 24px;">
-                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;" class="${state.trackingActive ? 'animate-pulse' : ''}">
+                <div style="width: 100px; height: 100px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;" class="${state.trackingActive ? 'animate-pulse' : ''}">
                     ${icons.navigation}
                 </div>
 
