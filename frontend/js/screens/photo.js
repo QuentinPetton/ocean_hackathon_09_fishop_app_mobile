@@ -28,7 +28,6 @@ export function renderPhotoScreen(state) {
                     <ul style="font-size: 12px; opacity: 0.9; line-height: 1.6; list-style: none; padding: 0; margin: 0;">
                         <li>• Espèces de poissons/poulpes</li>
                         <li>• Quantité et taille des captures</li>
-                        <li>• Coordonnées GPS du casier</li>
                     </ul>
                 </div>
             </div>
